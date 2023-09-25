@@ -1,5 +1,8 @@
 # tailwindcss-radix-ui
 
+![CI](https://img.shields.io/github/actions/workflow/status/junwen-k/tailwindcss-radix-ui/ci.yml?branch=main)
+![npm](https://img.shields.io/npm/dm/%40junwen-k%2Ftailwindcss-radix-ui)
+![Tailwind](https://img.shields.io/badge/tailwindcss-v3.2+-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff)
 [![License](https://img.shields.io/github/license/junwen-k/tailwindcss-radix-ui)](https://raw.githubusercontent.com/junwen-k/tailwindcss-radix-ui/main/LICENSE)
 
 A plugin for Tailwind CSS v3.2+ that generates data attribute as well as CSS variable utilities for [Radix UI](https://www.radix-ui.com/primitives).
