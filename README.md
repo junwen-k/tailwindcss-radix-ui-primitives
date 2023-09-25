@@ -14,10 +14,10 @@ A plugin for Tailwind CSS v3.2+ that generates data attribute as well as CSS var
 Install the plugin with your favourite package manager:
 
 ```sh
-npm install tailwindcss-radix-ui
-yarn add tailwindcss-radix-ui
-pnpm install tailwindcss-radix-ui
-bun add tailwindcss-radix-ui
+npm install @junwen-k/tailwindcss-radix-ui
+yarn add @junwen-k/tailwindcss-radix-ui
+pnpm install @junwen-k/tailwindcss-radix-ui
+bun add @junwen-k/tailwindcss-radix-ui
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
@@ -29,7 +29,7 @@ module.exports = {
     // ...
   },
   plugins: [
-    require('tailwindcss-radix-ui')({
+    require('@junwen-k/tailwindcss-radix-ui')({
       themeKey: 'radix', // Defaults to "radix"
     }),
     // ...
