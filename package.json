@@ -1,10 +1,10 @@
 {
-  "name": "@junwen-k/tailwindcss-radix-ui",
+  "name": "tailwindcss-radix-ui-primitives",
   "version": "0.1.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
-  "repository": "https://github.com/junwen-k/tailwindcss-radix-ui",
+  "repository": "https://github.com/junwen-k/tailwindcss-radix-ui-primitives",
   "publishConfig": {
     "access": "public"
   },
