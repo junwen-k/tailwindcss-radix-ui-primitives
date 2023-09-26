@@ -1,26 +1,30 @@
-name: Release
+name: release-please
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
-  build:
+  release-please:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16]
-
     steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: tailwindcss-radix-ui-primitives
+
       - uses: actions/checkout@v3
+        if: ${{ steps.release.outputs.release_created }}
 
       - uses: pnpm/action-setup@v2
         with:
           version: 8
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -28,17 +32,22 @@ jobs:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Install dependencies
         run: pnpm install
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Build
         run: pnpm run build
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Test
         run: pnpm test
+        if: ${{ steps.release.outputs.release_created }}
 
       - name: Publish
         run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        if: ${{ steps.release.outputs.release_created }}
