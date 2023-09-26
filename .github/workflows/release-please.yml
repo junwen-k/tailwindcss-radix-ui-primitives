@@ -14,6 +14,7 @@ jobs:
 
     steps:
       - uses: google-github-actions/release-please-action@v3
+        id: release
         with:
           release-type: node
           package-name: tailwindcss-radix-ui-primitives
@@ -30,7 +31,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://registry.npmjs.org/'
           cache: 'pnpm'
         if: ${{ steps.release.outputs.release_created }}
 
