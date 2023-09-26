@@ -1,9 +1,9 @@
-# tailwindcss-radix-ui
+# tailwindcss-radix-ui-primitives
 
-![CI](https://img.shields.io/github/actions/workflow/status/junwen-k/tailwindcss-radix-ui/ci.yml?branch=main)
-![npm](https://img.shields.io/npm/dm/%40junwen-k%2Ftailwindcss-radix-ui)
+![CI](https://img.shields.io/github/actions/workflow/status/junwen-k/tailwindcss-radix-ui-primitives/ci.yml?branch=main)
+![npm](https://img.shields.io/npm/dm/%40junwen-k%2Ftailwindcss-radix-ui-primitives)
 ![Tailwind](https://img.shields.io/badge/tailwindcss-v3.2+-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff)
-[![License](https://img.shields.io/github/license/junwen-k/tailwindcss-radix-ui)](https://raw.githubusercontent.com/junwen-k/tailwindcss-radix-ui/main/LICENSE)
+[![License](https://img.shields.io/github/license/junwen-k/tailwindcss-radix-ui-primitives)](https://raw.githubusercontent.com/junwen-k/tailwindcss-radix-ui-primitives/main/LICENSE)
 
 A plugin for Tailwind CSS v3.2+ that generates data attribute as well as CSS variable utilities for [Radix UI](https://www.radix-ui.com/primitives).
 
@@ -17,10 +17,10 @@ A plugin for Tailwind CSS v3.2+ that generates data attribute as well as CSS var
 Install the plugin with your favourite package manager:
 
 ```sh
-npm install @junwen-k/tailwindcss-radix-ui
-yarn add @junwen-k/tailwindcss-radix-ui
-pnpm install @junwen-k/tailwindcss-radix-ui
-bun add @junwen-k/tailwindcss-radix-ui
+npm install tailwindcss-radix-ui-primitives
+yarn add tailwindcss-radix-ui-primitives
+pnpm install tailwindcss-radix-ui-primitives
+bun add tailwindcss-radix-ui-primitives
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
@@ -32,7 +32,7 @@ module.exports = {
     // ...
   },
   plugins: [
-    require('@junwen-k/tailwindcss-radix-ui')({
+    require('tailwindcss-radix-ui-primitives')({
       themeKey: 'radix', // Defaults to "radix"
     }),
     // ...
