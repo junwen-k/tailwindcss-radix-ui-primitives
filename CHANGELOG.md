@@ -17,7 +17,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * **build:** add npmrc for pre-post scripts ([236f3b8](https://github.com/junwen-k/tailwindcss-radix-ui-primitives/commit/236f3b87516b50e455ad12ad6b8f0261c17ca0ab))
 * **npm:** rename package ([123c60b](https://github.com/junwen-k/tailwindcss-radix-ui-primitives/commit/123c60b17a519435f60cbd5ecf0d23bf621d50d8))
-
-## [Unreleased]
-
-- Nothing yet!
