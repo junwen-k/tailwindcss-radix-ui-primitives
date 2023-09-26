@@ -1,5 +1,6 @@
 {
   "name": "tailwindcss-radix-ui-primitives",
+  "description": "A plugin for Tailwind CSS v3.2+ that generates data attribute as well as CSS variable utilities for Radix UI.",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
