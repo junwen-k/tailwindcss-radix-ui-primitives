@@ -13,11 +13,11 @@
     "preinstall": "npx only-allow pnpm",
     "test": "jest",
     "swcify": "swc ./src/index.ts --out-dir ./dist",
-    "build": "npm run swcify",
-    "dev": "npm run swcify -- --watch",
+    "build": "pnpm run swcify",
+    "dev": "pnpm run swcify -- --watch",
     "prepare": "husky install",
     "postbuild": "tsc --emitDeclarationOnly",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run build"
   },
   "engines": {
     "node": ">=16.0.0"
