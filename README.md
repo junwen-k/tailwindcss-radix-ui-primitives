@@ -1,7 +1,7 @@
 # tailwindcss-radix-ui-primitives
 
 ![CI](https://img.shields.io/github/actions/workflow/status/junwen-k/tailwindcss-radix-ui-primitives/ci.yml?branch=main)
-![npm](https://img.shields.io/npm/dm/%40junwen-k%2Ftailwindcss-radix-ui-primitives)
+![npm](https://img.shields.io/npm/dm/tailwindcss-radix-ui-primitives)
 ![Tailwind](https://img.shields.io/badge/tailwindcss-v3.2+-0F172A?logo=tailwindcss&style=flat&labelColor=38bdf8&logoColor=ffffff)
 [![License](https://img.shields.io/github/license/junwen-k/tailwindcss-radix-ui-primitives)](https://raw.githubusercontent.com/junwen-k/tailwindcss-radix-ui-primitives/main/LICENSE)
 
