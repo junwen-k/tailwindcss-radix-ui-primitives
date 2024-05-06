@@ -1,4 +1,4 @@
-import { expect } from '@jest/globals'
+import { expect, it } from 'vitest'
 import { html, css, run } from './run'
 
 it('should generate Radix data attribute utilites', () => {
