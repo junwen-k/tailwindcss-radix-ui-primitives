@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0](https://github.com/junwen-k/tailwindcss-radix-ui-primitives/compare/v1.0.0...v1.1.0) (2024-05-27)
+
+
+### Features
+
+* upgrade codebase ([717f611](https://github.com/junwen-k/tailwindcss-radix-ui-primitives/commit/717f611468dc1623629808ee855ec7247aa9a35b))
+
 ## 1.0.0 (2023-09-26)
 
 
