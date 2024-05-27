@@ -1,5 +1,6 @@
 import { expect, it } from 'vitest'
-import { html, css, run } from './run'
+
+import { html, css, run } from '../vitest/run'
 
 it('should generate Radix data attribute utilites', () => {
   const config = {

@@ -1,8 +1,10 @@
 import path from 'path'
+
 import postcss from 'postcss'
 import tailwind, { Config } from 'tailwindcss'
-import radix from '../src'
 import { expect } from 'vitest'
+
+import radix from '../src'
 
 export const css = String.raw
 export const html = String.raw

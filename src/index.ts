@@ -103,7 +103,7 @@ interface Options {
   themeKey?: string
 }
 
-export = plugin.withOptions<Options>(
+export default plugin.withOptions<Options>(
   () => function radix() {},
   ({ themeKey = 'radix' } = {}) => ({
     theme: {

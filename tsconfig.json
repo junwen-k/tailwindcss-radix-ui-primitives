@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2019",
     "lib": ["ES2019"],
-    "module": "CommonJS",
+    "module": "ESNext",
     "declaration": true,
     "declarationMap": false,
     "declarationDir": "dist",
@@ -13,6 +13,5 @@
     "outDir": "dist",
     "allowJs": true
   },
-  "include": ["./src/index.ts", "./tests/index.ts"],
-  "exclude": ["./tests/index.test.ts"]
+  "include": ["src", "vitest.d.ts"]
 }
