@@ -22,7 +22,8 @@
   },
   "packageManager": "pnpm@10.0.0",
   "files": [
-    "src/index.css"
+    "src/index.css",
+    "MIGRATION.md"
   ],
   "peerDependencies": {
     "tailwindcss": ">=4.0.0"
