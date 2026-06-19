@@ -1,0 +1,165 @@
+/* =============================================================================
+   Boolean data attribute variants
+   Usage: data-disabled:opacity-50, data-highlighted:bg-accent, etc.
+   ============================================================================= */
+
+@custom-variant data-active (&[data-active]);
+@custom-variant data-disabled (&[data-disabled]);
+@custom-variant data-highlighted (&[data-highlighted]);
+@custom-variant data-invalid (&[data-invalid]);
+@custom-variant data-max (&[data-max]);
+@custom-variant data-placeholder (&[data-placeholder]);
+@custom-variant data-valid (&[data-valid]);
+@custom-variant data-value (&[data-value]);
+
+/* =============================================================================
+   Key-value data attribute variants
+   Usage: data-state-open:rotate-180, data-side-top:slide-in-from-bottom-2, etc.
+   ============================================================================= */
+
+/* data-align */
+@custom-variant data-align-center (&[data-align="center"]);
+@custom-variant data-align-end (&[data-align="end"]);
+@custom-variant data-align-start (&[data-align="start"]);
+
+/* data-motion — NavigationMenu.Content */
+@custom-variant data-motion-from-end (&[data-motion="from-end"]);
+@custom-variant data-motion-from-start (&[data-motion="from-start"]);
+@custom-variant data-motion-to-end (&[data-motion="to-end"]);
+@custom-variant data-motion-to-start (&[data-motion="to-start"]);
+
+/* data-orientation */
+@custom-variant data-orientation-horizontal (&[data-orientation="horizontal"]);
+@custom-variant data-orientation-vertical (&[data-orientation="vertical"]);
+
+/* data-side — floating content (Tooltip, Popover, DropdownMenu, etc.) */
+@custom-variant data-side-bottom (&[data-side="bottom"]);
+@custom-variant data-side-left (&[data-side="left"]);
+@custom-variant data-side-right (&[data-side="right"]);
+@custom-variant data-side-top (&[data-side="top"]);
+
+/* data-state */
+@custom-variant data-state-active (&[data-state="active"]);
+@custom-variant data-state-checked (&[data-state="checked"]);
+@custom-variant data-state-closed (&[data-state="closed"]);
+@custom-variant data-state-complete (&[data-state="complete"]);
+@custom-variant data-state-delayed-open (&[data-state="delayed-open"]);
+@custom-variant data-state-hidden (&[data-state="hidden"]);
+@custom-variant data-state-inactive (&[data-state="inactive"]);
+@custom-variant data-state-indeterminate (&[data-state="indeterminate"]);
+@custom-variant data-state-instant-open (&[data-state="instant-open"]);
+@custom-variant data-state-loading (&[data-state="loading"]);
+@custom-variant data-state-off (&[data-state="off"]);
+@custom-variant data-state-on (&[data-state="on"]);
+@custom-variant data-state-open (&[data-state="open"]);
+@custom-variant data-state-unchecked (&[data-state="unchecked"]);
+@custom-variant data-state-visible (&[data-state="visible"]);
+
+/* data-swipe — Toast.Root */
+@custom-variant data-swipe-cancel (&[data-swipe="cancel"]);
+@custom-variant data-swipe-end (&[data-swipe="end"]);
+@custom-variant data-swipe-move (&[data-swipe="move"]);
+@custom-variant data-swipe-start (&[data-swipe="start"]);
+
+/* data-swipe-direction — Toast.Root */
+@custom-variant data-swipe-direction-down (&[data-swipe-direction="down"]);
+@custom-variant data-swipe-direction-left (&[data-swipe-direction="left"]);
+@custom-variant data-swipe-direction-right (&[data-swipe-direction="right"]);
+@custom-variant data-swipe-direction-up (&[data-swipe-direction="up"]);
+
+/* =============================================================================
+   CSS variable utilities
+   Registers Radix UI CSS variables as named theme values so they can be used
+   with standard Tailwind utilities (w-*, h-*, max-h-*, origin-*, translate-*, etc.)
+   without needing the verbose arbitrary-value syntax: w-[var(--radix-...)].
+
+   Uses @theme inline so values are registered as theme keys only — they are not
+   emitted as :root declarations since their values are var() references.
+   ============================================================================= */
+
+@theme inline {
+  /* --- Accordion ----------------------------------------------------------- */
+  --spacing-radix-accordion-content-width: var(--radix-accordion-content-width);
+  --spacing-radix-accordion-content-height: var(--radix-accordion-content-height);
+
+  /* --- Collapsible --------------------------------------------------------- */
+  --spacing-radix-collapsible-content-width: var(--radix-collapsible-content-width);
+  --spacing-radix-collapsible-content-height: var(--radix-collapsible-content-height);
+
+  /* --- NavigationMenu viewport --------------------------------------------- */
+  --spacing-radix-navigation-menu-viewport-width: var(--radix-navigation-menu-viewport-width);
+  --spacing-radix-navigation-menu-viewport-height: var(--radix-navigation-menu-viewport-height);
+
+  /* --- Trigger sizes ------------------------------------------------------- */
+  --spacing-radix-context-menu-trigger-width: var(--radix-context-menu-trigger-width);
+  --spacing-radix-context-menu-trigger-height: var(--radix-context-menu-trigger-height);
+  --spacing-radix-dropdown-menu-trigger-width: var(--radix-dropdown-menu-trigger-width);
+  --spacing-radix-dropdown-menu-trigger-height: var(--radix-dropdown-menu-trigger-height);
+  --spacing-radix-hover-card-trigger-width: var(--radix-hover-card-trigger-width);
+  --spacing-radix-hover-card-trigger-height: var(--radix-hover-card-trigger-height);
+  --spacing-radix-menubar-trigger-width: var(--radix-menubar-trigger-width);
+  --spacing-radix-menubar-trigger-height: var(--radix-menubar-trigger-height);
+  --spacing-radix-popover-trigger-width: var(--radix-popover-trigger-width);
+  --spacing-radix-popover-trigger-height: var(--radix-popover-trigger-height);
+  --spacing-radix-select-trigger-width: var(--radix-select-trigger-width);
+  --spacing-radix-select-trigger-height: var(--radix-select-trigger-height);
+  --spacing-radix-tooltip-trigger-width: var(--radix-tooltip-trigger-width);
+  --spacing-radix-tooltip-trigger-height: var(--radix-tooltip-trigger-height);
+
+  /* --- Available space (collision detection) ------------------------------- */
+  --spacing-radix-context-menu-content-available-width: var(
+    --radix-context-menu-content-available-width
+  );
+  --spacing-radix-context-menu-content-available-height: var(
+    --radix-context-menu-content-available-height
+  );
+  --spacing-radix-dropdown-menu-content-available-width: var(
+    --radix-dropdown-menu-content-available-width
+  );
+  --spacing-radix-dropdown-menu-content-available-height: var(
+    --radix-dropdown-menu-content-available-height
+  );
+  --spacing-radix-hover-card-content-available-width: var(
+    --radix-hover-card-content-available-width
+  );
+  --spacing-radix-hover-card-content-available-height: var(
+    --radix-hover-card-content-available-height
+  );
+  --spacing-radix-menubar-content-available-width: var(--radix-menubar-content-available-width);
+  --spacing-radix-menubar-content-available-height: var(--radix-menubar-content-available-height);
+  --spacing-radix-popover-content-available-width: var(--radix-popover-content-available-width);
+  --spacing-radix-popover-content-available-height: var(--radix-popover-content-available-height);
+  --spacing-radix-select-content-available-width: var(--radix-select-content-available-width);
+  --spacing-radix-select-content-available-height: var(--radix-select-content-available-height);
+  --spacing-radix-tooltip-content-available-width: var(--radix-tooltip-content-available-width);
+  --spacing-radix-tooltip-content-available-height: var(--radix-tooltip-content-available-height);
+
+  /* --- Transform origins (for direction-aware animations) ------------------ */
+  --transform-origin-radix-context-menu-content-transform-origin: var(
+    --radix-context-menu-content-transform-origin
+  );
+  --transform-origin-radix-dropdown-menu-content-transform-origin: var(
+    --radix-dropdown-menu-content-transform-origin
+  );
+  --transform-origin-radix-hover-card-content-transform-origin: var(
+    --radix-hover-card-content-transform-origin
+  );
+  --transform-origin-radix-menubar-content-transform-origin: var(
+    --radix-menubar-content-transform-origin
+  );
+  --transform-origin-radix-popover-content-transform-origin: var(
+    --radix-popover-content-transform-origin
+  );
+  --transform-origin-radix-select-content-transform-origin: var(
+    --radix-select-content-transform-origin
+  );
+  --transform-origin-radix-tooltip-content-transform-origin: var(
+    --radix-tooltip-content-transform-origin
+  );
+
+  /* --- Toast swipe offsets (for gesture-driven animations) ----------------- */
+  --spacing-radix-toast-swipe-move-x: var(--radix-toast-swipe-move-x);
+  --spacing-radix-toast-swipe-move-y: var(--radix-toast-swipe-move-y);
+  --spacing-radix-toast-swipe-end-x: var(--radix-toast-swipe-end-x);
+  --spacing-radix-toast-swipe-end-y: var(--radix-toast-swipe-end-y);
+}
