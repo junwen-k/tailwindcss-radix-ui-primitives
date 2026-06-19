@@ -66,7 +66,11 @@ expect.extend({
       })
 
     const stripped = (str: string) =>
-      str.replace('/* prettier-ignore */', '').replace(/\s/g, '').replace(/;/g, '')
+      str
+        .replace('/* prettier-ignore */', '')
+        .replace(/\s/g, '')
+        .replace(/;/g, '')
+        .replace(/'/g, '"')
 
     const options = {
       comment: 'stripped(received).includes(stripped(argument))',
