@@ -49,9 +49,13 @@ The `themeKey` option is no longer supported. All CSS variables are now register
 
 In v1, you could reference Radix CSS variables via Tailwind's `theme()` function:
 
-```css
-/* v1 only */
-keyframes: ({theme}) => ({slideDown: {to: {height: theme('radix.accordion-content-height')}, }, });
+```js
+// tailwind.config.js — v1 only
+keyframes: ({ theme }) => ({
+  slideDown: {
+    to: { height: theme('radix.accordion-content-height') },
+  },
+}),
 ```
 
 In v2, use the CSS variable directly:
